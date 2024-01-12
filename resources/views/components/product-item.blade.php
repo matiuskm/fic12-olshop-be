@@ -4,7 +4,7 @@
     </td>
     <td>{{ $product->name }}</td>
     <td>{{ $product->category->name }}</td>
-    <td>{{ $product->price }}</td>
+    <td>@currency($product->price)</td>
     <td>{{ $product->stock }}</td>
     <td>{{ $product->is_in_stock ? 'IN STOCK' : 'OUT OF STOCK' }}</td>
     <td>
