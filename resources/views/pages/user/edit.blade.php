@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout title="Users">
     <div class="container-fluid pt-4 px-4">
         <div class="breadcrumb">
             <div class="breadcrumb-item"><a href="{{ route('home') }}">Dashboard</a></div>
