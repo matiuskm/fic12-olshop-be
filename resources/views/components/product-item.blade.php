@@ -2,7 +2,7 @@
     <td><img src="{{ $product->getImage() }}" alt="{{ $product->name }}" style="width: 50px; height: 50px;"
             class="img rounded">
     </td>
-    <td>{{ $product->name }}</td>
+    <td>{{ Str::limit($product->name, 30, '...') }}</td>
     <td>{{ $product->category->name }}</td>
     <td>@currency($product->price)</td>
     <td>{{ $product->stock }}</td>
