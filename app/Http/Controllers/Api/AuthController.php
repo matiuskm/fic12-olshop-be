@@ -23,6 +23,7 @@ class AuthController extends Controller
 
         // Create user
         $validatedData['password'] = Hash::make($request->password);
+        $validatedData['role'] = 'user';
         $user = User::create($validatedData);
 
         // Create token
